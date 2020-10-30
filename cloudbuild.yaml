@@ -1,9 +1,9 @@
 steps:
 # Uses the docker build step to build an image called msa
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/msa', '.']
-
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/msa:mvp', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '-t', 'gcr.io/$PROJECT_ID/msa:mvp', '.']
 # msa is pushed to Container Registry
 images:
   - 'gcr.io/$PROJECT_ID/msa:mvp'
-  - 'gcr.io/$PROJECT_ID/msa:latest'
