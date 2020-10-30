@@ -1,8 +1,13 @@
 {
-  "presets": ["@babel/preset-env", "stage-0"],
-  "plugins": [
-    ["transform-runtime", {
-      "regenerator": true
-    }]
-  ]
+  "presets": [
+      [
+          "@babel/preset-env",
+          {
+              "targets": {
+              "node": "current"
+              }
+          }
+      ]
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
 }
