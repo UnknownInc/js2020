@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: msa
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: msa
@@ -13,7 +13,7 @@ spec:
         app: msa
     spec:
       containers:
-      - image: gcr.io/ind-si-infra-managment-184960/msa:latest
+      - image: gcr.io/ind-si-infra-managment-184960/msa:mvp
         name: msa
         ports:
         - containerPort: 8080

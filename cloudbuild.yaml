@@ -5,4 +5,5 @@ steps:
 
 # msa is pushed to Container Registry
 images:
-  - 'gcr.io/$PROJECT_ID/msa' 
+  - 'gcr.io/$PROJECT_ID/msa:mvp'
+  - 'gcr.io/$PROJECT_ID/msa:latest'
