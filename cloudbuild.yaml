@@ -1,9 +1,9 @@
 steps:
-# Uses the docker build step to build an image called msa
+# Uses the docker build step to build an image called js2020
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/msa', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/js2020', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/msa']
-# msa is pushed to Container Registry
+  args: ['push', 'gcr.io/$PROJECT_ID/js2020']
+# js2020 is pushed to Container Registry
 images:
-  - 'gcr.io/$PROJECT_ID/msa'
+  - 'gcr.io/$PROJECT_ID/js2020'

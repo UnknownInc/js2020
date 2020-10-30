@@ -13,11 +13,24 @@ spec:
         app: msa
     spec:
       containers:
-      - image: gcr.io/ind-si-infra-managment-184960/msa:latest
+      - image: gcr.io/ind-si-infra-managment-184960/js2020:latest
         imagePullPolicy: Always
         name: msa
         ports:
         - containerPort: 8080
+        volumeMounts:
+        # volumes to mount
+        - name: secret-volume # matches secret name
+          # path for this secret to be available at
+          mountPath: "/opt/firebase/"
+          readOnly: true # no editing!
         env:
         - name: "PORT"
           value: "8080"
+        - name: "GOOGLE_APPLICATION_CREDENTIALS"
+          value: "/opt/firebase/serviceaccount.json"
+      volumes:
+      # create volumes
+      - name: secret-volume # name to match for mounting
+        secret:
+          secretName: firebase-secret # name of secret
