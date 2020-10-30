@@ -32,6 +32,9 @@ export default class Session {
               };
               this.refreshItems();
             });
+            setTimeout(()=>{
+              usr.getIdToken(true);
+            }, 30*60*1000);
           },
           (err)=>{
             console.error(err);
