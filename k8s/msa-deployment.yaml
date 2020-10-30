@@ -13,7 +13,8 @@ spec:
         app: msa
     spec:
       containers:
-      - image: gcr.io/ind-si-infra-managment-184960/msa:mvp
+      - image: gcr.io/ind-si-infra-managment-184960/msa:latest
+        imagePullPolicy: Always
         name: msa
         ports:
         - containerPort: 8080
