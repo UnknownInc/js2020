@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="512px"
+   height="512px"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"><metadata
+   id="metadata842"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs840" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1352"
+   inkscape:window-height="821"
+   id="namedview838"
+   showgrid="false"
+   inkscape:zoom="1.1975718"
+   inkscape:cx="256"
+   inkscape:cy="256"
+   inkscape:window-x="0"
+   inkscape:window-y="23"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+   <g
+   id="g835"
+   style="fill:#00bdff;fill-opacity:1"
+   inkscape:export-filename="/Users/rakravur/projects/unknowninc/msa/uiapp/public/logo192.png"
+   inkscape:export-xdpi="36"
+   inkscape:export-ydpi="36">
+    <path
+   d="M255.703-0.531c-141.391,0-256,114.625-256,256s114.609,256,256,256s256.016-114.625,256.016-256       S397.094-0.531,255.703-0.531z M255.703,479.469c-123.516,0-224-100.5-224-224s100.484-224,224-224s224.016,100.5,224.016,224       S379.219,479.469,255.703,479.469z M271.703,223.469h-32v-128h32V223.469z M383.719,255.469c0,70.625-57.438,128-128.016,128       s-128-57.375-128-128c0-53.5,33.266-98.813,80-117.875v35.375c-28.578,16.625-48,47.125-48,82.5c0,52.938,43.063,96,96,96       c52.953,0,96.016-43.063,96.016-96c0-35.313-19.438-65.875-48-82.5v-35.375C350.469,156.656,383.719,201.969,383.719,255.469z"
+   id="path833"
+   style="fill:#00bdff;fill-opacity:1" />
+  </g>
+</svg>

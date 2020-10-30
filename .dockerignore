@@ -1,0 +1,11 @@
+node_modules
+uiapp/node_modules
+.dockerignore
+Dockerfile.dev
+Dockerfile
+npm-debug.log
+yarn-error.log
+.git
+.hg
+.svn
+.env

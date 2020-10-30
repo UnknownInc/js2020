@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: msa-ingress
+spec:
+  tls:
+  - secretName: https-secrets
+  rules:
+  - http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: msa-service
+          servicePort: 80

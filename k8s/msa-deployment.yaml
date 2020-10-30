@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: msa
+  template:
+    metadata:
+      labels:
+        app: msa
+    spec:
+      containers:
+      - image: gcr.io/ind-si-infra-managment-184960/msa:latest
+        name: msa
+        ports:
+        - containerPort: 8080
+        env:
+        - name: "PORT"
+          value: "8080"

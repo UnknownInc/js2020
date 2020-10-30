@@ -1,0 +1,29 @@
+{
+  "name": "msa",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dockerbuild": "docker build -t msa .",
+    "build": "babel src -d build && cp -r src/views ./build",
+    "dev": "nodemon -w 'src/**/*' -r dotenv/config --exec babel-node src/server.js",
+    "start": "node build/server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.5",
+    "debug": "~4.2.0",
+    "express": "~4.17.1",
+    "firebase-admin": "^9.3.0",
+    "http-errors": "~1.8.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.10.0",
+    "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
