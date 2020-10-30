@@ -245,8 +245,8 @@ const HomePage = observer(()=>{
         <div className={classes.intro}>
           <Typography variant="h2">Welcome<br/>
           to<br/>
-          Jumpstart 2020
           </Typography>
+          <div style={{textAlign:'center'}}><img src={'/images/jslogo_red.png'} alt="jumpstart 2020 logo" width={300}/></div>
           <br/>
           <Button variant='contained' color='primary' onClick={handleLoginClick}>Login</Button>
         </div>
