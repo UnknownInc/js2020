@@ -173,7 +173,7 @@ const HomePage = observer(()=>{
       if (session.user) {
         session.refreshComments();
       }
-    }, 10000);
+    }, 1000);
     return ()=>{
       clearInterval(tid);
     }

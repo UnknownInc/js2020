@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat:'no-repeat',
     fontFamily: '"Comic Sans MS", "Comic Sans", cursive'
   },
+  small: {
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+  },
 }));
 
 export default function Note({comment}) {
@@ -73,7 +77,7 @@ export default function Note({comment}) {
           <Typography>{comment.comment}</Typography>
           <br/>
           <div style={{float:'right', display:'flex', flexDirection:'row', alignItems:'center'}}>
-            <Avatar src={`https://www.gravatar.com/avatar/${md5(comment.email.toLowerCase())}?d=robohash`}></Avatar>
+            <Avatar src={`https://www.gravatar.com/avatar/${md5(comment.email.toLowerCase())}?d=robohash`} className={classes.small}></Avatar>
             <Typography variant="caption">
               &nbsp;&nbsp; {comment.email}
             </Typography>
