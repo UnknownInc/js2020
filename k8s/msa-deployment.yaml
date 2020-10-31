@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: msa
-        event: js202
+        event: js2020
     spec:
       containers:
       - image: gcr.io/ind-si-infra-managment-184960/js2020:latest

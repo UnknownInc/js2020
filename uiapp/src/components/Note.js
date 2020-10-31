@@ -73,7 +73,7 @@ export default function Note({comment}) {
           <Typography>{comment.comment}</Typography>
           <br/>
           <div style={{float:'right', display:'flex', flexDirection:'row', alignItems:'center'}}>
-            <Avatar src={`https://www.gravatar.com/avatar/${md5(comment.email.toLowerCase())}?d=identicon`}></Avatar>
+            <Avatar src={`https://www.gravatar.com/avatar/${md5(comment.email.toLowerCase())}?d=robohash`}></Avatar>
             <Typography variant="caption">
               &nbsp;&nbsp; {comment.email}
             </Typography>
