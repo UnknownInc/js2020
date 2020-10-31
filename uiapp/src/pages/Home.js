@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'url(/images/ps-logo.png), url(/images/jsringsc.png), url(/images/dotsbg.png)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top left, right top, center',
-    backgroundSize: '120px, contain, contain',
+    backgroundSize: '90px, contain, contain',
     backgroundAttachment: 'fixed',
   },
   intro:{
@@ -196,7 +196,7 @@ const HomePage = observer(()=>{
       <React.Fragment>
         <Grid container className={classes.root}>
           <Container maxWidth="sm">
-            <div style={{textAlign:'center', padding:16}}><img src={'/images/jslogo_red.png'} width={300} alt="note bg"/></div>
+            <div style={{textAlign:'center', padding:16}}><img src={'/images/jslogo_red.png'} width={200} alt="note bg"/></div>
             {session.items.map(item=>(
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
