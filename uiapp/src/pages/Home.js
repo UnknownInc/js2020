@@ -38,6 +38,7 @@ import AddIcon from '@material-ui/icons/Add';
 
 import useStores from '../stores/useStores';
 import { Avatar, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, InputLabel, ListItem, ListItemAvatar, ListItemText, MenuItem, Select, TextField } from '@material-ui/core';
+import Note from '../components/Note';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,15 +65,6 @@ const useStyles = makeStyles((theme) => ({
     width:'100%',
     maxHeight: 450,
     transform: 'translateZ(0)',
-  },
-  comment:{
-    position:'absolute', 
-    top:0, left:0, bottom:0, right:0, background:'#fff',
-    padding: '32px',
-    backgroundSize:'contain',
-    backgroundPosition:'center',
-    backgroundRepeat:'no-repeat',
-    fontFamily: '"Comic Sans MS", "Comic Sans", cursive'
   },
   titleBar: {
     // color:'black',
@@ -214,9 +206,7 @@ const HomePage = observer(()=>{
                 <GridList cellHeight={150} spacing={3} cols={3} className={classes.gridList}>
                   {session.comments.filter(c=>c.sessionId===item.id).map(c=>(
                   <GridListTile key={c.id} cols={1} rows={1}>
-                    <div className={classes.comment} elevation={3} style={{backgroundImage:`url(/images/note${1+Math.trunc(Math.random()*9)}.png)`}}>
-                      {c.comment.substr(0,64)+'...'}
-                    </div>
+                    <Note comment={c}/>
                     {/* <GridListTileBar
                       title={c.email}
                       titlePosition="bottom"
